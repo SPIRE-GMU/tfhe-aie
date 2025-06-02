@@ -1,3 +1,6 @@
+## Update Jun. 2, 2025
+Testbench targeting boolean logic for 128-security param. 
+
 ## Update Mar 24, 2025
 To reduce the communication overhead between the AIE graph and the host, I build a bridge on the PL side to preload the bootstrapping key. The benefit of PL is that it supports high-throughput communication with AIE through multiple axi-streams.
 
