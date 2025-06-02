@@ -11,6 +11,14 @@ how to compile bootstrapping test:
 
 3. compile any of the test function with: g++ test/test-gate-bootstrapping.cpp src/*.c src/*.cpp -lm -o bootstrapping_test -I include/ -fsanitize=address -g
 
+
 (replace main function test/xxx with objected one)
 
 
+optional: go to boot-gates.cpp, replace line 49:
+
+     tfhe_bootstrap_FFT(result, bk->bkFFT, MU, temp_result);
+with 
+     tfhe_bootstrap(result, bk->bk, MU, temp_result);
+
+then it call vaive polynomial multiplication instaed, which 50x times slower. The reason I choose naive poly-multiplier is to obtain golden numbers for a AIE accelerator. For CPU benchmark, just use FFT.
