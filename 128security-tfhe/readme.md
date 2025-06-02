@@ -22,4 +22,4 @@ with
      
      tfhe_bootstrap(result, bk->bk, MU, temp_result);
 
-then it call vaive polynomial multiplication instaed, which 50x times slower. The reason I choose naive poly-multiplier is to obtain golden numbers for a AIE accelerator. For CPU benchmark, just use FFT.
+then it call vaive polynomial multiplication instead, which 50x times slower. The reason I choose naive poly-multiplier is to obtain golden numbers for a AIE accelerator. For CPU benchmark, just use FFT.
