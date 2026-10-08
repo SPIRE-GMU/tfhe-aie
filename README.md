@@ -1,3 +1,6 @@
+## Update Oct. 8, 2026
+Add NTT solutions, which decreases the latency to around 5-20 us
+
 ## Update Jun. 2, 2025
 Testbench targeting boolean logic for 128-security param. 
 
